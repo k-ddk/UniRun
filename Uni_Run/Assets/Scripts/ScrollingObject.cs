@@ -9,7 +9,6 @@ public class ScrollingObject : MonoBehaviour
     {
         if (!GameManager.instance.isGameover)
         {
-            Debug.Log("업데이트if들어옴");
             transform.Translate(Vector3.left * speed * Time.deltaTime);
         }
     }

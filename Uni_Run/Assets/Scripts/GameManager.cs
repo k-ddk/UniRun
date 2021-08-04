@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     // 게임 시작과 동시에 싱글턴을 구성
     void Awake()
     {
-        if (instance != null)
+        if (instance == null)
         {
             instance = this;
         }
